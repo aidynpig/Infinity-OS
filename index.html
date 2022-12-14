@@ -1,586 +1,313 @@
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
-    <title>MSDN系统库－致力于原版windows生态服务</title>
-    <meta name="keywords" content="系统库,msdn,MSDN系统库,原版系统,原版windows,原版win10,原版win7,原版win8,原版win11,原版office"/>
-    <meta name="description" content="MSDN系统库，免费为你提供我告诉你msdn原版纯净系统，原版win11，win10，win8/8.1，win7系统下载，原版office全系列下载与安装等服务"/>
-    <meta charset='utf-8'/>
-    <meta content="telephone=no" name="format-detection">
-    <!--    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">-->
-    <link rel="shortcut icon" href="https://www.xitongku.com/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="https://www.xitongku.com/css/base.css"/>
-    <link rel="stylesheet" type="text/css" href="https://www.xitongku.com/css/windows.css"/>
-    <link rel="stylesheet" type="text/css" href="https://www.xitongku.com/css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="https://www.xitongku.com/css/menu.css"/>
-    <link rel="stylesheet" href="https://www.xitongku.com/re_main.css">
-    <script type="text/javascript" src="https://www.xitongku.com/js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="https://www.xitongku.com/js/llc.js"></script>
-</head>
-<body>
-<div class="header">
-    <div class="logo">
-        <a href="/">
-            <img src="https://www.xitongku.com/images/logo2.png"/>
-        </a>
-    </div>
-    <div class="close_btn2">
-        <div class="icon-left"></div>
-        <div class="icon-right"></div>
-    </div>
-</div>
-<div class="box" id="box">
-    <div class="left">
-        <div class="show_box">
-            <div class="show_name">系统库</div>
-            <div class="show_desc">MSDN系统库－致力于原版windows生态服务</div>
-
-            <div class="show_img">
-                <img id="w_img" src="images/default_windows.png"/>
-            </div>
-            <div class="show_detail" id="home_desc">
-            </div>
-            <!--            <div style="clear:both; padding-top:15px; text-align:center; color: #ffffff"><a-->
-            <!--                    href="http://beian.miit.gov.cn/"-->
-            <!--                    style="color: #ffffff">粤ICP备18149045号</a></div>-->
-        </div>
-    </div>
-    <div class="right">
-        <div class="office_btn">
-            <a href="office.html" class="function_btn to_office"><div>下载Office</div><img class="down_icon" src="images/ic_download.svg"></a>
-        </div>
-        <div class="version_box version_content">
-            <!--            <div class="form_group">-->
-            <!--                <p>请选择系统：<a href="javascript:void(0)" class="tip">?<i style="display: none;">请选择你所需要的Windows</i></a></p>-->
-            <!--            </div>-->
-            <!--            <div id="windows" class="form_group"></div>-->
-            <!--            <div class="form_group">-->
-            <!--                <p>请选择版本：<a href="javascript:void(0)" class="tip">?<i>请选择你选择的Windows的版本</i></a></p>-->
-            <!--            </div>-->
-            <!--            <div id="vision" class="form_group"></div>-->
-            <!--                        <div class="form_group">-->
-            <!--                            <p>请选择位数：<a href="javascript:void(0)" class="tip">?<i>请选择x86或x64位Windows</i></a></p>-->
-            <!--                        </div>-->
-            <!--            <div id="bit" class="form_group"></div>-->
-
-        </div>
-        <div class="index_footer">
-            <div>
-                <a href="about.html">关于我们</a>
-                <a href="javascript:void(0)" class="tip">微信公众号
-                    <i>
-                        <img style="width: 200px; height: 200px" src="images/weixin.jpg"/>
-                    </i>
-                </a>
-                <a href="https://hipc.cn/?ku" target="_blank" rel="nofollow">HiPC</a>
-                <a href="https://www.haipc.cn/?ku" target="_blank" rel="nofollow">嗨PC主页</a>
-                <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤ICP备18149045号</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="dialog" id="dialog">
-    <div class="area">
-        <h3 class="title" id="dialog_title"></h3>
-        <a class="pl_more off" id="dialog_btn"></a>
-    </div>
-    <div class="bg"></div>
-</div>
-
-<div class="content_box" style="display: none;">
-    <div class="download_content">
-        <div class="left">
-            <div class="show_box">
-                <div class="show_name">系统库</div>
-                <div class="show_desc">MSDN系统库－致力于原版windows生态服务</div>
-                <div class="show_img" id="img">
-                    <img id="d_img" src="images/win10.png"/>
-                </div>
-                <div class="show_detail" id="desc">
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="office_btn">
-<!--                <div class="function_btn to_office"><div>下载Office</div><img class="down_icon" src="images/ic_download.svg"></img></div>-->
-            </div>
-            <div class="version_box">
-                <div class="choose">
-                    <!--                    <input type="text" id="system_url" name="add_url" value=""/>-->
-                    <!--                    <input type="text" id="vision_url" name="add_url" value=""/>-->
-                    <!--                    <input type="text" id="bit_url" name="add_url" value=""/>-->
-                    <ul id="edit_view"></ul>
-                    <!--                    <input type="text" id="edit_btn" class="edit_btn" value="修改"/>-->
-                    <input type="hidden" id="local_url" name="local_url" value=""/>
-                </div>
-                <div class="tip_title">
-                    <div class="download_title">一切为你准备就绪！</div>
-                    <p>下载地址</p>
-                </div>
-
-                <div id="area_url" class="down_btn"></div>
-                <div class="course_btn">
-                    <a href="list.html" target="_blank" id="jc_url">安装教程 <img src="images/download_right.png"></a>
-                    <a href="soft.html">软件推荐 <img src="images/download_right.png"></a>
-                    <a href="javascript:void(0)" class="tip">更新推送
-                        <img src="images/download_right.png">
-                        <i style="top: -205px;width: unset;left: -80px;">
-                            <img style="width: 200px; height: 200px" src="images/weixin.jpg"/>
-                        </i>
-                    </a>
-					<a href="https://hipc.cn/?ku" target="_blank">手机控制电脑 <img src="images/download_right.png"></a>
-					<a href="https://www.haipc.cn/?ku" target="_blank">一个好看的主页 <img src="images/download_right.png"></a>
-                </div>
-            </div>
-        </div>
-
-        <span class="clear"></span>
-    </div>
-</div>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>专注于Win10 - 更专注,才更出色</title>
+<meta name="keywords" content="专注于Win10,win10,win10系统,win10系统下载,w10,iwin10,win10纯净版,win10专业版" />
+<meta name="description" content="也许是迄今为止最好的Windows——Windows10,现已推出吻妻优化作品,一如既往的品质更稳定更好用的win10纯净版系统欢迎你下载体验。" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="HandheldFriendly"content="true"/>
+<meta name="format-detection"content="telephone=no">
+<meta http-equiv="x-rim-auto-match"content="none"/>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="https://iwin10.net/main.css" />
+<link href="https://iwin10.net/css/frames.css" type="text/css" rel="stylesheet" />
+<link href="https://iwin10.net/css/slider.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
 <script type="text/javascript">
-    $(function(){
-        var MobileUA = (function() {
-            var ua = navigator.userAgent.toLowerCase();
-            var mua = {
-                IOS: /ipod|iphone|ipad/.test(ua), //iOS
-                IPHONE: /iphone/.test(ua), //iPhone
-                IPAD: /ipad/.test(ua), //iPad
-                ANDROID: /android/.test(ua), //Android Device
-                WINDOWS: /windows/.test(ua), //Windows Device
-                TOUCH_DEVICE: ('ontouchstart' in window) || /touch/.test(ua), //Touch Device
-                MOBILE: /mobile/.test(ua), //Mobile Device (iPad)
-                ANDROID_TABLET: false, //Android Tablet
-                WINDOWS_TABLET: false, //Windows Tablet
-                TABLET: false, //Tablet (iPad, Android, Windows)
-                SMART_PHONE: false //Smart Phone (iPhone, Android)
-            };
-            mua.ANDROID_TABLET = mua.ANDROID && !mua.MOBILE;
-            mua.WINDOWS_TABLET = mua.WINDOWS && /tablet/.test(ua);
-            mua.TABLET = mua.IPAD || mua.ANDROID_TABLET || mua.WINDOWS_TABLET;
-            mua.SMART_PHONE = mua.MOBILE && !mua.TABLET;
-            return mua;
-        }());
-        //SmartPhone
-        if (MobileUA.SMART_PHONE) {
-            // 移动端链接地址
-            var moblieUrl= "https://www.xitongku.com/h5/";
-            // moblieUrl = moblieUrl.replace("http://iwin10.net", "http://m.iwin10.net");
-            // moblieUrl = moblieUrl.replace("//", "//m.");
-            document.location.href = moblieUrl;
+$(function(){
+    var MobileUA = (function() {
+        var ua = navigator.userAgent.toLowerCase();
 
-        }
-    });
-    let downData;
-    $(function () {
-        $.ajax({
-            type: "get",
-            url: "./data/windows.json",
-            // url: "http://admin.xitongku.com/api/soft/export_json?type=windows",
-            dataType: "json",
-            success: function (res) {
-                let data = [];
-                data.push({children: []})
-                data[0].children = convert(res, 0);
-                console.log(data)
+        var mua = {
+            IOS: /ipod|iphone|ipad/.test(ua), //iOS
+            IPHONE: /iphone/.test(ua), //iPhone
+            IPAD: /ipad/.test(ua), //iPad
+            ANDROID: /android/.test(ua), //Android Device
+            WINDOWS: /windows/.test(ua), //Windows Device
+            TOUCH_DEVICE: ('ontouchstart' in window) || /touch/.test(ua), //Touch Device
+            MOBILE: /mobile/.test(ua), //Mobile Device (iPad)
+            ANDROID_TABLET: false, //Android Tablet
+            WINDOWS_TABLET: false, //Windows Tablet
+            TABLET: false, //Tablet (iPad, Android, Windows)
+            SMART_PHONE: false //Smart Phone (iPhone, Android)
+        };
 
-                let box = $(".version_content")
-                let box_div = $("<div id='first'/>")
-                box.append(box_div)
-                // if (res.length > 0){
-                //     // for (let i = 0; i < res.length; i++){
-                //     //    let item_title = $("<div class='form_group'>")
-                //     //     console.log(box)
-                //     //     item_title.append("<p>请选择系统：<a href=\"javascript:void(0)\" class=\"tip\">?<i style=\"display: none;\">请选择你所需要的Windows</i></a></p>")
-                //     //     box.append(item_title)
-                //     // }
-                downData = data[0].children;
-                data.forEach((item, i) => {
-                    console.log(item)
-                    let item_title = $("<div class='form_group'>")
-                    item_title.append("<p>请选择系统：</p>")
-                    // item_title.append("<p>请选择系统：<a href=\"javascript:void(0)\" class=\"tip\">?<i style=\"display: none;\">请选择你所需要的Windows</i></a></p>")
-                    box_div.append(item_title)
-                    if (item.children.length > 0) {
-                        let select_box = $("<div id='' class=\"form_group\">")
-                        let select_ul = $("<ul class=''/>")
-                        select_box.append(select_ul)
-                        box_div.append(select_box)
-                        item.children.forEach((item, ii) => {
-                            downItem(item, select_ul, i, [ii])
-                        })
-                    }
-                })
-                // }
-            }
-        })
-    })
+        mua.ANDROID_TABLET = mua.ANDROID && !mua.MOBILE;
+        mua.WINDOWS_TABLET = mua.WINDOWS && /tablet/.test(ua);
+        mua.TABLET = mua.IPAD || mua.ANDROID_TABLET || mua.WINDOWS_TABLET;
+        mua.SMART_PHONE = mua.MOBILE && !mua.TABLET;
 
-    function convert(data, pid) {
-        let convertData = [];
-        data.forEach((item, i) => {
-            if (item.pid === pid) {
-                convertData.push(item);
-                convertChild(data, item, item.id)
-            }
-        })
-        return convertData;
-    }
+        return mua;
+    }());
 
-    function convertChild(arr, pItem, pid) {
-        pItem.children = pItem.children ? pItem.children : [];
-        arr.forEach(item => {
-            if (item.pid === pid) {
-                pItem.children.push(item);
-                convertChild(arr, item, item.id)
-            }
-        })
-        return pItem.children;
-    }
+    //SmartPhone
+    if (MobileUA.SMART_PHONE) {
+        // 移动端链接地址
 
-    function downItem(item, view, index, for_index) {
-        // 把item 存进h5中，后续直接拿数据
-        let select_item = $("<li class='off' id='select' data='" + JSON.stringify(item) + "' index='" + for_index.join(",") + "'>" + item.name + "</li>")
-        view.append(select_item);
-        let box_div;
-        //组件存在则复用
-        if ($('#a' + index).length > 0) {
-            box_div = $('#a' + index)
-        } else {
-            box_div = $("<div id='a" + index + "' attr='" + item + "'/>")
-            box_div.appendTo(".version_content")
-        }
-        index++;
-        if (for_index[for_index.length - 1] == 0) {
-            select_item.addClass("on")
-        }
-        select_item.click(function () {
-            //判断上一级是否选中
-            if (index - 3 >= 0) {
-                if ($('#a' + (index - 3) + " .on").length == 0) {
-                    return;
-                }
-            }
-            // index == 2 时判断第一项有没有选中
-            if (index == 2 && $("#first .on").length == 0) {
-                return;
-            }
-            //添加选中状态
-            $(this).siblings("li").removeClass();
-            $(this).addClass("on");
-            //清除之前组件的数据;
-            box_div.empty();
-            for (let box_i = index; box_i < 5; box_i++) {
-                $('#a' + box_i).empty();
-            }
-            //点击时拿当项
-            if (item.children.length > 0) {
-                if (item.image != ''){
-                    $("#w_img").attr('src',item.pc_img);
-                }
-                if (item.fullname){
-                    $(".show_name").text(item.fullname)
-                    $(".show_desc").text(item.slogan)
-                }
-                let item_title = $("<div class='form_group'>")
-                // item_title.append("<p>" + item.nickname + "<a href=\"javascript:void(0)\" class=\"tip\">?<i style=\"display: none;\">请选择你所需要的Windows</i></a></p>")
-                let item_nickname = $("<p>" + item.nickname + "</p>")
-                if (item.annotate){
-                    let item_tip = $("<a href=\"javascript:void(0)\" class=\"tip\">?</a>")
-                    let item_i = $("<i style=\"display: none;\"></i>")
-                    item_i.html("<div>"+item.annotate+"</div>")
-                    item_tip.append(item_i)
-                    item_nickname.append(item_tip)
-                }
-                item_title.append(item_nickname)
-                box_div.append(item_title)
-                let select_box = $("<div id='' class=\"form_group\">")
-                let select_ul = $("<ul class=''/>")
-                select_box.append(select_ul)
-                box_div.append(select_box)
-                item.children.forEach((item, ii) => {
-                    downItem(item, select_ul, index, for_index.concat(ii))
-                })
-            } else if (item.children.length == 0) {
-                addDownBtn(item, for_index);
-            }
-        })
-        // 非点击时 只拿第一项的子项
-        if (item.children.length > 0 && for_index[for_index.length - 1] == 0) {
-            if (item.image != ''){
-                $("#w_img").attr('src',item.pc_img);
-            }
-            if (item.fullname){
-                $(".show_name").text(item.fullname)
-                $(".show_desc").text(item.slogan)
-            }
-            let item_title = $("<div class='form_group'>")
-            let item_nickname = $("<p>" + item.nickname + "</p>")
-            if (item.annotate){
-                let item_tip = $("<a href=\"javascript:void(0)\" class=\"tip\">?</a>")
-                let item_i = $("<i style=\"display: none;\"></i>")
-                item_i.html("<div class='tip_content'>"+item.annotate+"</div>")
-                item_tip.append(item_i)
-                item_nickname.append(item_tip)
-            }
-            item_title.append(item_nickname)
-            box_div.append(item_title)
-            // box_div.appendTo(".version_content")
-            let select_box = $("<div id='' class=\"form_group\">")
-            let select_ul = $("<ul class=''/>")
-            select_box.append(select_ul)
-            box_div.append(select_box)
-            item.children.forEach((item, ii) => {
-                downItem(item, select_ul, index, for_index.concat(ii))
-            })
-        } else if (item.children.length == 0 && for_index[for_index.length - 1] == 0) {
-            addDownBtn(item, for_index);
-        }
+       var moblieUrl= window.location.href;
+        // moblieUrl = moblieUrl.replace("http://iwin10.net", "http://m.iwin10.net");
+        moblieUrl = moblieUrl.replace("//", "//m.");
+        document.location.href = moblieUrl;
 
     }
 
-    function addDownBtn(item, for_index) {
-        let down_btn;
-        if ($("#down_btn").length > 0) {
-            $("#down_btn").remove();
-        }
-        down_btn = $("<div class=\"function_btn btn_down\" id='down_btn' data='" + JSON.stringify(item) + "' index='" + for_index.join(",") + "'><div>下载</div></div>")
-        down_btn.appendTo(".version_content")
-        $("#home_desc").html(item.description);
-    }
-
-    $(document).on("click", "#down_btn", function () {
-        let data = JSON.parse($(this).attr('data'));
-        let index = $(this).attr('index').split(",");
-        if (!data.keywords){
-            alert("未找到下载地址");
-            return ;
-        }
-        let down = JSON.parse(data.keywords);
-        $("#box").hide();
-        $("#desc").html(data.description);
-        let item = downData;
-        for (let i = 0; i < index.length; i++) {
-            let edit_li = $("<li class='select_on' >" + item[index[i]].name + "</li>")
-            item = item[index[i]].children
-            edit_li.appendTo("#edit_view")
-        }
-        $("<li class='off' id='edit_btn'>修改</li>").appendTo("#edit_view")
-        $("#d_img").attr('src',downData[index[0]].pc_img)
-        // console.log(downData[index[0]].image)
-        let keys = Object.keys(down)
-        $("#area_url").empty();
-        for (let i = 0; i < keys.length; i++) {
-            let str_url = "";
-            if (keys[i].indexOf("|") != -1){
-                let key = keys[i].split("|");
-                console.log(key)
-                str_url = $("<a class='down_list' target='_blank' code='"+key[1]+"' url='"+ down[keys[i]] +"'>" + key[0] + "</a>");
-                str_url.click(function (){
-                    // console.log($(this).attr('code'))
-                    let code = $(this).attr('code');
-                    let url = $(this).attr('url')
-                    let dialog = $("#dialog");
-                    $("#dialog_title").text("提取码："+$(this).attr('code'));
-                    $("#dialog_btn").text("复制并跳转下载");
-                    $("#dialog_btn").attr("code",code);
-                    $("#dialog_btn").attr("url",url);
-                    dialog.show();
-                })
-            }else {
-                str_url = $("<a class='down_list' target='_blank' href='"+down[keys[i]]+"'>" + keys[i] + "</a>");
-            }
-            $("#area_url").append(str_url);
-        }
-        $(".content_box").show();
-
-    });
-
-    $(".bg").click(function(){
-        // $(".link ul li a").attr("class","");
-        $("#dialog").hide();
-    });
-    $("#dialog_btn").click(function (){
-        let copy = document.createElement('input');
-        copy.setAttribute("id", "cp_hgz_input");
-        copy.value =$(this).attr('code');
-        document.getElementsByTagName('body')[0].appendChild(copy);
-        document.getElementById('cp_hgz_input').select();
-        document.execCommand('copy');
-        // document.getElementById('cp_hgz_input').remove();
-        var child = document.getElementById('cp_hgz_input');
-        child.parentNode.removeChild(child);
-        window.open($(this).attr('url'))
-    })
-    // $(document).ready(function() {
-    //     $.ajax({
-    //         type: "get",
-    //         url: "./home.xml", //这里通过设置url属性来获取xml
-    //         dataType: "xml",
-    //         timeout: 1000, //设定超时
-    //         cache: false, //禁用缓存
-    //         success: function(xml) {
-    //             console.log(xml)
-    //             var frag1 = $("<ul class='system'/>");
-    //             var frag2 = $("<ul class='vision'/>");
-    //             var frag3 = $("<ul class='bit'/>");
-    //             $(xml).find("system").each(function(i) {
-    //                 vv = $(this).attr("vision");
-    //                 frag1.append("<li>" + vv + "</li>");
-    //             });
-    //             $(xml).find("system:first").each(function(i) {
-    //                 classid = $(this).children("classid");
-    //                 for (i = 0; i < classid.length; i++) {
-    //                     frag2.append("<dd class='off' rel=" + classid.eq(i).text() + ">" + classid.eq(i).attr("name") + "</dd>");
-    //                 }
-    //             });
-    //             $(xml).find("system:first").each(function(i) {
-    //                 classid = $(this).children("classid");
-    //                 classid_txt = classid.eq(i).text();
-    //                 bit_text = classid_txt.split("|");
-    //                 for (var i = 0; i < bit_text.length; i++) {
-    //                     frag3.append("<dd class='off' >" + bit_text[i] + "</dd>");
-    //
-    //                 }
-    //             });
-    //             frag1.appendTo("#windows");
-    //             frag2.appendTo("#vision");
-    //             frag3.appendTo("#bit");
-    //         }
-    //     });
-    // });
-    // $(document).on("click", "#windows li", function() {
-    //     $("#bit li").removeClass();
-    //     $(this).siblings("li").removeClass();
-    //     $(this).addClass("on");
-    //     n = $(this).text();
-    //     $.ajax({
-    //         type: "get",
-    //         url: "./home.xml", //这里通过设置url属性来获取xml
-    //         dataType: "xml",
-    //         timeout: 1000, //设定超时
-    //         cache: false, //禁用缓存
-    //         success: function(xml) {
-    //             $(xml).find("system").each(function(i) {
-    //                 vision = $(this).attr("vision");
-    //
-    //
-    //                 classid = $(this).children("classid");
-    //                 if (vision == n) {
-    //                     w_img = $(this).attr("img");
-    //                     w_title = $(this).attr("title");
-    //                     $("#w_img").attr('src', w_img);
-    //                     $(".show_name").text(vision);
-    //                     $(".show_desc").text(w_title);
-    //                     var frag = $("<ul class='vision' />");
-    //                     for (i = 0; i < classid.length; i++) {
-    //                         frag.append("<li rel=" + classid.eq(i).text() + ">" + classid.eq(i).attr("name") + "</li>");
-    //                     }
-    //                     $("#system_url").val(vision);
-    //                 }
-    //                 $("#vision").html(frag);
-    //             });
-    //         }
-    //     });
-    // });
-    // $(document).on("click", "#vision li", function() {
-    //     $(this).siblings("li").removeClass();
-    //     $(this).addClass("on");
-    //     p_text = $(this).attr("rel");
-    //     bit_text = p_text.split("|");
-    //     var frag = $("<ul class='bit' />");
-    //     for (var i = 0; i < bit_text.length; i++) {
-    //         frag.append("<li>" + bit_text[i] + "</li>");
-    //
-    //     }
-    //     $("#vision_url").val($(this).text());
-    //     $("#bit").html(frag);
-    // });
-    // $(document).on("click", "#bit li", function() {
-    //     $(this).siblings("li").removeClass();
-    //     $(this).addClass("on");
-    //     // $("#add_url").val($("#add_url").val()+"_"+$(this).text());
-    //     $("#bit_url").val($(this).text());
-    //
-    //     $("#local_url").val($("#system_url").val() + "_" + $("#vision_url").val() + "_" + $("#bit_url").val());
-    //     local_url = $("#system_url").val() + "_" + $("#vision_url").val() + "_" + $("#bit_url").val();
-    //     $(".box").hide();
-    //     $.ajax({
-    //         type: "get",
-    //         url: "./add_url.xml", //这里通过设置url属性来获取xml
-    //         dataType: "xml",
-    //         timeout: 1000, //设定超时
-    //         cache: false, //禁用缓存
-    //         success: function(xml) {
-    //             var xxx = $("<ul class='system'/>");
-    //             // var xml;
-    //             // if (typeof data == "string") {
-    //             // 	xml = new ActiveXObject("Microsoft.XMLDOM");
-    //             // 	xml.async = false;
-    //             // 	xml.loadXML(data);
-    //             // } else {
-    //             // 	xml = data;
-    //             // }
-    //
-    //             $(xml).find("windows").each(function(i) {
-    //                 vision = $(this).attr("vision");
-    //                 title = $(this).attr("title");
-    //                 $str_url = "";
-    //                 if (vision == local_url) {
-    //                     vision_title = vision.split("_");
-    //                     $("#vision_name").html(vision_title[0]);
-    //                     $("#title").html(title);
-    //                     $("#img img").attr('src', $(this).children("img").text());
-    //                     $("#desc").html($(this).children("desc").html());
-    //                     $("#jc_url").attr('href', $(this).children("jc_url").html());
-    //                     xxx.appendTo("123");
-    //                     down = $(this).children("down");
-    //
-    //                     for (i = 0; i < down.length; i++) {
-    //                         $str_url += ("<a  target='_blank' href='" + down[i].childNodes[0].nodeValue + "'>" + down.eq(i).attr("name") + "</a>");
-    //                         // console.log('down[i]', down[i])
-    //                         // console.log('路径', down[i].childNodes[0].nodeValue + down.eq(i).attr("name"))
-    //
-    //                     }
-    //                     $("#area_url").html($str_url);
-    //                 }
-    //             });
-    //         }
-    //     });
-    //     $(".content_box").show();
-    //
-    // });
-    $(document).on("click", "#edit_btn", function () {
-        $(".content_box").hide();
-        $(".box").show();
-        $("#edit_view").empty();
-    });
+	//调用通用头部
+    $("#header").load("./header.html");
+    setTimeout(function(){$("#header .nav .li1 a").addClass("on")},100)
+});
 </script>
-<!--弹出区域 -->
-<div class="menu_area">
-    <div class="header">
-        <div class="logo">
-            <a href="/">
-                <img src="images/logo1.png"/>
-            </a>
-        </div>
-        <div class="close_btn open">
-            <div class="icon-left"></div>
-            <div class="icon-right"></div>
-        </div>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+<!--        <div class="header"><em class="home_ico"></em>-->
+<!--            <div class="logo"><a href="./"><img src="images/logo.png"  /></a></div>-->
+<!--            <div class="nav">-->
+<!--                <ul>-->
+<!--                    <li class="li1"><a href="./" class="on">首页</a></li>-->
+<!--                    <li class="li2"><a href="2021/0203.html">Win10 Pro</a></li>-->
+<!--                    <li class="li3"><a href="2020/0501.html">Win10 LTSC</a></li>-->
+<!--                    <li class="li4"><a href="support.html">服务与支持</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <span class="clear"></span>-->
+<!--        </div>-->
+<!--        <div class="nav_bg"></div>-->
     </div>
-    <div class="box">
-        <div class="content">
-            <script type="text/javascript" src="foot_txt.js"></script>
-        </div>
-    </div>
+   <div id="banner">
+   	  <!-- 代码begin -->
+<div class="flexslider">
+	<ul class="slides">
+		<li style="background-image:url(images/banner1.jpg);background-repeat: no-repeat;background-size:contain;background-position:center;"><a href="2022/0428.html"></a></li>
+		<li style="background-image:url(images/banner2.jpg);background-repeat: no-repeat;background-size:contain;background-position:center;"><a href="2022/0428.html"></a></li>
+		<li style="background-image:url(images/banner3.jpg);background-repeat: no-repeat;background-size:contain;background-position:center;"><a href="2022/0906.html"></a></li>
+	</ul>
 </div>
-<!--弹出区域 -->
-		<div style="display:none">
-			<script type="text/javascript">
-				var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-				document.write(unescape("%3Cspan id='cnzz_stat_icon_1259264936'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
-					"s11.cnzz.com/stat.php%3Fid%3D1259264936' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-		</div>
+<!-- 代码end -->
+
+   </div>
+   <div id="content">
+   		<div id="item1">
+   		<div class="item">
+        	<div class="img">
+            	<div class="slide_img"><div class="flexslider2">
+	<ul class="slides">
+		<li style="background:url(images/jpxxx1.jpg) 50% 0 no-repeat;background-size: contain;"></li>
+		<li style="background:url(images/jpxxx2.jpg) 50% 0 no-repeat;background-size: contain;"></li>
+	</ul>
+</div></div>
+            </div>
+            <div class="txt">
+            	<h1>熟悉自如的开始菜单</h1>
+                <p>如果你既喜欢Win7开始菜单的简单便捷，<br />
+                也喜欢Win8开始菜单的磁贴风格，<br />
+                那么如今的Win10都帮你实现了，<br />
+                无论半屏全屏，炫彩透明，无所不能！
+                </p>
+            </div>
+
+            <span class="clear"></span>
+        </div>
+        </div>
+<!-- js调用部分begin -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+
+	$('.flexslider2').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+	$(".color #c1").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c1.jpg)");
+		$("#pic_color").css("background-color","#ff5b31");
+  	});
+	$(".color #c2").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c2.jpg)");
+		$("#pic_color").css("background-color","#ff7c1c");
+  	});
+	$(".color #c3").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c3.png)");
+		$("#pic_color").css("background-color","#ffc000");
+  	});
+	$(".color #c4").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c4.png)");
+		$("#pic_color").css("background-color","#98e247");
+
+  	});
+	$(".color #c5").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c5.png)");
+		$("#pic_color").css("background-color","#35e08a");
+  	});
+	$(".color #c6").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c6.png)");
+		$("#pic_color").css("background-color","#4086ff");
+  	});
+	$(".color #c7").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c7.png)");
+		$("#pic_color").css("background-color","#636fe4");
+  	});
+	$(".color #c8").click(function(){
+		$(".color i").attr("class","");
+		$(this).attr("class","on");
+		$("#pic_img").css("background-image","url(pic/c8.png)");
+		$("#pic_color").css("background-color","#9a65db");
+  	});
+});
+
+</script>
+<!-- js调用部分end -->
+<style>
+@-webkit-keyframes xiaona{
+    0%{
+
+       transform:scale(1.2,1.2); opacity:1;
+
+    }
+    50%{
+        transform:scale(1,1); opacity:0.5;
+    }
+    100%{
+        transform:scale(1.2,1.2); opacity:1;
+    }
+}
+.img_area .ico img{-webkit-animation:xiaona 2s infinite linear ;}
+
+.item .ico span i{-webkit-animation:xiaona 5s infinite linear ;}
+</style>
+        <div id="item2">
+   		<div class="item">
+        	<div class="img">
+            	<div class="img_area">
+            	<span class="ico"><img src="images/pic2.png" /></span>
+                <p>你好，我是微软小娜！<br />有问题尽管问我！</p>
+                </div>
+                </div>
+            <div class="txt"><div class="txt_area">
+            	<h1>更智能的小娜语音助手</h1>
+                <p>
+                在Win10上，你现在可以使用智能的小娜实现语音搜索、语音查询<br />
+                天气、日历或行程等，语音打开任一应用甚至还可以调整一些系<br />
+                统设置，设置一个指定时间的闹钟，播放一首指定的音乐等。
+                </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="item3">
+   		<div class="item">
+        	<div class="img"><img src="images/edge.jpg" /></div>
+            <div class="txt">
+            	<span class="ico"><img src="images/edge.png" width="60" /></span>
+            	<h1>全新Edge,<br />上网新体验</h1>
+                <p>全新Chromium内核，<br />
+                支持锦集、扩展、云功能等，<br />
+                极简设计，与Win10天生一对，<br />
+                这将是你访问互联网世界的新大门。
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <div id="item4">
+   		<div class="item">
+        	<div class="img" id="pic_img" style="background-image:url(pic/c1.png);"><span id="pic_color" class="cor"></span></div>
+            <div class="txt">
+            	<div class="txt_area">
+            	<h1>色彩随心，个性随你</h1>
+                <p>青春本该色彩的，你的系统也不例外，<br />
+                Win10支持根据你的壁纸选取一种主题色，<br />
+                随心变换，个性随你，让你无趣的办公学习环境更多姿多彩。
+                </p>
+                <span class="color">
+                <i id="c1" class="on"></i>
+                <i id="c2"></i>
+                <i id="c3"></i>
+                <i id="c4"></i>
+                <i id="c5"></i>
+                <i id="c6"></i>
+                <i id="c7"></i>
+                <i id="c8"></i>
+                </span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+	   <div id="item5">
+       		<div class="item">
+            	<h3>化繁为简，释心灵犀<b>比原版更便捷的傻瓜式安装体验；纯净几乎无任何精减，给你更完整的Win10体验；更符合国人使用习惯的优化，智能的同时去掉了许多繁琐</b></h3>
+                <div class="ico">
+                	<span class="i1"><i></i>更便捷的傻瓜式安装体验</span>
+                    <span class="i2"><i></i>更完整的Win10体验</span>
+                    <span class="i3"><i></i>更符合国人使用习惯</span>
+                    <span class="clear"></span>
+                </div>
+                <div class="btn_more">
+                	<a href="2022/0428.html">立即体验</a>
+                </div>
+            </div>
+       </div>
+
+   </div>
+   <div id="footer">
+   <div class="copyright">
+   	<div class="share">
+    	<div class="xcode">
+        	<span class="img"><img src="images/code.gif" /></span>
+            <span class="txt">微信扫一扫关注 专注于win10</span>
+        </div>
+    	<a href="https://tieba.baidu.com/f?kw=%D7%A8%D7%A2%D3%DAwin10&fr=ala0&tpl=5" target="_blank" class="t1"><img src="images/share_ico1.gif" /></a>
+        <a href="javascript:void(0)" class="t2"><img src="images/share_ico2.gif" /></a>
+        <a href="tencent://message/?uin=730410405&Menu=yes" class="t3"><img src="images/share_ico3.gif" /></a>
+    </div>
+   <p>
+	&copy;2022 <a href="../">iWin10</a> Email：iwindows10@126.com<br />
+	<a href="../">专注于win10</a>  <span style="color: #393838">|</span>
+    <a href="https://www.newxitong.com/?10" target="_blank">专注于win7</a>  <span style="color: #393838">|</span>
+    <a href="https://hipc.cn/?10" target="_blank">HiPC移动助手</a>  <span style="color: #393838">|</span>
+    <a href="https://www.haipc.cn/?10" target="_blank">嗨PC主页</a>  <span style="color: #393838">|</span>
+    <a href="https://newxitong.lofter.com/?10" target="_blank">吻妻博客</a>  <span style="color: #393838">|</span>
+    <a href="../support.html">关于我们</a>
+    <div style="display:none"><script src="https://s22.cnzz.com/z_stat.php?id=1264508338&web_id=1264508338" language="JavaScript"></script></div>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?0be5a6b24160028c1763846bdb4f4437";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+    <br />
+    <b>专注，只为与你更好的遇见</b>
+   </p>
+   </div>
+   </div>
+</div>
 </body>
 </html>
